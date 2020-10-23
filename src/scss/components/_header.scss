@@ -1,0 +1,43 @@
+.header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    .container{
+        display: flex;
+    }
+}
+.header-logo{
+    max-width: 15%;
+}
+.header-logo__img {
+    width: 70%;
+}
+.delivery-info{
+    .city{
+        color: $main-color !important;
+    }
+}
+.delivery-info__title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.delivery-info__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+}
+.delivery-info, .header-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-phone{
+    margin-left: auto;
+    text-align: right;
+}
+.header-phone__title{
+    font-size: 16px;
+}
+.header-phone__number {
+    font-size: 20px;
+    color: $main-color;
+    font-weight: 600;
+}

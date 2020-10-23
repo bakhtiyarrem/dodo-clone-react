@@ -1,0 +1,116 @@
+.cart {   
+    .container {
+        max-width: 700px;
+        padding-top: 40px;
+    }
+}
+.cart__title {
+    font-size: 28px;
+}
+.order-card {
+    padding-top: 20px;
+}
+.order-card__item {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 1px solid $border-color;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr 2fr .3fr;
+    grid-column-gap: 20px;
+    align-items: center;
+}
+.order-card__img-wrapper {
+    
+}
+.order-card__img {
+    width: 100%;
+}
+.order-card__text {
+}
+.order-card__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+.order-card__info {
+    font-size: 16px;
+    color: $text-silver;
+}
+
+.order-card__qty-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    height: 40px;
+}
+.order-card__change-btn, .order-card__qty{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order-card__change-btn{
+    border: 1px solid $main-color;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover{
+        color: #ffffff !important;
+        background-color: $main-color;
+        transition: .2s;
+    }
+}
+.order-card__price {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+.order-card__remove {
+    cursor: pointer;
+    img{
+        width: 100%;
+    }
+}
+.cart__total-price {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 22px;
+    span{
+        color: $main-color;
+        margin-left: 10px;
+    }
+}
+.cart__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.cart__buy, .cart__back-btn{
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 18px;
+    transition: .4s;
+}
+.cart__back-btn {
+    border: 2px solid $text-silver;
+    color: #000 !important;
+    &:hover{
+        filter: brightness(90%);
+        border: 2px solid $main-color;
+        color: $main-color !important;
+    }
+}
+.cart__buy {
+    color: #ffffff !important;
+    background-color: $main-color;
+    font-weight: 600;
+    &:hover{
+        filter: brightness(90%);
+        transition: .4s;
+    }
+}

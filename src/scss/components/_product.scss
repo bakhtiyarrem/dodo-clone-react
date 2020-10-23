@@ -1,0 +1,30 @@
+.product {
+    padding-top: 40px;
+}
+.product__title {
+    font-weight: 600;
+    font-size: 24px;
+}
+.product__card-wrapper {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.card {
+}
+.card__img {
+}
+.card__title {
+}
+.card__ingredient {
+}
+.card__selector {
+}
+.active {
+}
+.card__bottom-wrapper {
+}
+.card__price {
+}
+.card__buy {
+}

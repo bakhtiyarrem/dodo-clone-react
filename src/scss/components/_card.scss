@@ -1,0 +1,98 @@
+.card{
+    border: 1px solid $border-color;
+    padding: 20px;
+    transition: .2s;
+    &:hover{
+        transition: .1s;
+        box-shadow: 0px 6px 10px 0px rgba(179,179,179,0.66);    
+        .card__img{
+            transform: scale(1.03);
+            transition: 0.5s;
+        }
+    }
+}
+.card__img{
+    text-align: center;
+    transition: 0.5s;
+    img{
+        width: 90%;
+    }
+}
+.card__title{
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: 15px;
+    height: 33px;
+}
+.card__ingredient{
+    font-size: 16px;
+    color: $text-silver;
+    height: 90px;
+}
+.card__selector{
+    text-align: center;
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 8px;
+    border-radius: 10px;
+    li{
+        padding: 8px;
+        flex: 1;
+        cursor: pointer;
+        font-size: 16px;
+        &.active {
+            background: #ffffff;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+            border-radius: 5px;
+            cursor: pointer;
+          }
+    }
+}
+.card__bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.card__price{
+    font-weight: 600;
+    font-size: 22px;
+}
+.card__buy{
+    background-color: #fff;
+    border: 2px solid $main-color;
+    border-radius: 10px;
+    color: $main-color;
+    width: 120px;
+    height: 42px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        transition: .3s;
+        background-color: $main-color;
+        color: #fff;
+    }
+}
+.card__qty-wrapper{
+    width: 120px;
+    display: flex;
+}
+.card__qty, .card__change-btn{
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__change-btn{
+    background-color: $main-color;
+    font-weight: 600;
+    height: 42px;
+    float: left;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}

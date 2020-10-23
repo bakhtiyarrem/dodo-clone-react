@@ -1,0 +1,13 @@
+@import 'common/reset';
+@import 'variables';
+@import 'fonts';
+@import 'components/all';
+
+body{
+    font-family: 'Proxima Nova', sans-serif;
+    color: $text-main;
+}
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
