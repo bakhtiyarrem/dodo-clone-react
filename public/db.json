@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "title": "Пицца",
+      "id": "pizza",
+      "items": [
+        {
+          "id": 1,
+          "name": "Аррива",
+          "ingredient": "Соус бургер, цыпленок, соус ранч, чоризо из цыпленка, сладкий перец, красный лук, моцарелла, томаты, чеснок",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/2e8c610d59ce49fbae8f8909b2940343_233x233.jpeg",
+          "sizes": [
+            1
+          ],
+          "price": [
+            1990,
+            2490
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Песто",
+          "ingredient": "Соус песто, сливочный соус, цыплёнок, кубики брынзы, томаты черри, моцарелла",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/e10f295d5e0b433c8fca7af46a1ef7ec_233x233.jpeg",
+          "sizes": [
+            0,
+            1
+          ],
+          "price": [
+            1990,
+            2490
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Сырный цыпленок",
+          "ingredient": "Цыпленок, сырный соус, моцарелла, томаты",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/Pizza/ru-RU/7e5c8d20-985a-4378-8f92-cecd3b7fc11c.jpg",
+          "sizes": [
+            0,
+            1
+          ],
+          "price": [
+            1990,
+            2490
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Напитки",
+      "id": "drink",
+      "items": [
+        {
+          "id": 4,
+          "name": "Pepsi, 0.5 литр",
+          "ingredient": "Охлаждающий газированный сладкий напиток",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/5eebe31a08994ffe94b05a36b3eb091d_292x292.jpeg",
+          "sizes": [],
+          "price": [
+            400
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Pepsi, 1 литр",
+          "ingredient": "Охлаждающий газированный сладкий напиток",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/5eebe31a08994ffe94b05a36b3eb091d_292x292.jpeg",
+          "sizes": [],
+          "price": [
+            500
+          ]
+        },
+        {
+          "id": 6,
+          "name": "ASU, 1л, негаз",
+          "ingredient": "Охлаждающий негазированный напиток",
+          "imgUrl": "https://cdn.dodostatic.net/static/Img/Products/bb600168c478412483cca183c6a9c26a_292x292.jpeg",
+          "sizes": [],
+          "price": [
+            300
+          ]
+        }
+      ]
+    }
+  ]
+}
+

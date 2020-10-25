@@ -1,5 +1,4 @@
 .card{
-    border: 1px solid $border-color;
     padding: 20px;
     transition: .2s;
     &:hover{
@@ -25,11 +24,12 @@
     height: 33px;
 }
 .card__ingredient{
-    font-size: 16px;
+    font-size: 15px;
     color: $text-silver;
-    height: 90px;
+    height: 55px;
 }
 .card__selector{
+    margin-top: 15px;
     text-align: center;
     background-color: #f3f3f3;
     display: flex;
@@ -40,13 +40,20 @@
         flex: 1;
         cursor: pointer;
         font-size: 16px;
+        font-weight: 600;
         &.active {
             background: #ffffff;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
             border-radius: 5px;
             cursor: pointer;
           }
+        &.disabled{
+            color: $text-silver !important;
+            pointer-events: none;
+            font-weight: 400;
+        }
     }
+
 }
 .card__bottom-wrapper{
     display: flex;

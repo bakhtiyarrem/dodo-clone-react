@@ -26,7 +26,7 @@
     font-weight: 500;
     margin-right: 30px;
     font-size: 16px;
-    transition: 0.3;
+    transition: 0.3s;
     &:hover{
         color: $main-color;
         transition: 0.3s;
@@ -47,7 +47,7 @@
         transition: .2s;
         background-color: #ffffff;
         color: $main-color !important;
-        .cart__count {
+        .cart-button__count {
             border-left: 1px solid $main-color;
         }
     }
