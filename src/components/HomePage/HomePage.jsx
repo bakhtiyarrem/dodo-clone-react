@@ -1,18 +1,14 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import Slider from "./Slider/Slider";
-import Product from "./Product/Product";
-import {ProductsApi} from "../../api/api";
+import Products from "./Products/Product";
 
-const HomePage = ({products}) => {
+const HomePage = () =>{
     return (
         <>
             <Slider/>
-            {
-                products.map(el =>
-                    <Product key={el.id} {...el}/>)
-            }
+            <Products />
         </>
-    );
-};
+    )
+}
 
 export default HomePage;

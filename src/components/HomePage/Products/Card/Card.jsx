@@ -5,7 +5,6 @@ const Card = ({id, name, ingredient, imgUrl, price, sizes}) => {
     const [productCount, setProductCount] = useState(0)
     const [activeSize, setActiveSize] = useState(sizes[0])
 
-
     const toggleActiveSize = (activeSizeIndex) => {
         setActiveSize(activeSizeIndex)
     }
@@ -18,6 +17,7 @@ const Card = ({id, name, ingredient, imgUrl, price, sizes}) => {
 
     const aviableSizes = [25, 30]
 
+
     return (
         <div className="card">
             <div className="card__img"><img
@@ -28,20 +28,20 @@ const Card = ({id, name, ingredient, imgUrl, price, sizes}) => {
             <div className="card__ingredient">{ingredient}</div>
             {
                 !sizes.length ||
-                    <ul className="card__selector">
-                        {
-                            aviableSizes.map((el, index) => (
-                                <li key={el}
-                                    onClick={() => {
-                                        toggleActiveSize(index)
-                                    }}
-                                    className={classNames({
-                                        'active': index === activeSize,
-                                        'disabled': !sizes.includes(index)
-                                    })}>{el} см.</li>
-                            ))
-                        }
-                    </ul>
+                <ul className="card__selector">
+                    {
+                        aviableSizes.map((el, index) => (
+                            <li key={el}
+                                onClick={() => {
+                                    toggleActiveSize(index)
+                                }}
+                                className={classNames({
+                                    'active': index === activeSize,
+                                    'disabled': !sizes.includes(index)
+                                })}>{el} см.</li>
+                        ))
+                    }
+                </ul>
             }
 
             <div className="card__bottom-wrapper">

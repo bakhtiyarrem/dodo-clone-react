@@ -6,7 +6,7 @@ const Header = () => {
             <header className="header">
                 <div className="container">
                     <div className="header-logo">
-                        <Link to="/" href="#">
+                        <Link to="/">
                             <img className="header-logo__img"
                                  src="https://upload.wikimedia.org/wikipedia/ru/4/4c/%D0%94%D0%9E%D0%94%D0%9E-%D0%9F%D0%B8%D1%86%D1%86%D0%B0.jpg"
                                  alt="logo"/>
