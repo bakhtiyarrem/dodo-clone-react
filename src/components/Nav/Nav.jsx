@@ -1,7 +1,13 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
 
 const Nav = () => {
+    const {totalPrice, itemsCount} = useSelector(({cartReduce}) => ({
+        totalPrice: cartReduce.totalPrice,
+        itemsCount: cartReduce.itemsCount
+    }))
+
     return (
         <nav className="nav ">
             <div className="container">
@@ -12,8 +18,8 @@ const Nav = () => {
                 </ul>
 
                 <Link to="/cart" href="#" className="cart-button">
-                    <div className="cart-button__title">Корзина</div>
-                    <div className="cart-button__count">1</div>
+                    <div className="cart-button__title">{totalPrice ? totalPrice + " тг" : "Корзина"}</div>
+                    <div className="cart-button__count">{itemsCount}</div>
                 </Link>
             </div>
         </nav>

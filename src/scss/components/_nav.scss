@@ -5,6 +5,8 @@
     width: 100%;
     background-color: #ffffff;
     top: -70px;
+    font-weight: 500;
+    font-size: 16px;
     .container {
         width: 100%;
         display: flex;
@@ -23,9 +25,7 @@
     display: flex;
 }
 .nav-list__item {
-    font-weight: 500;
     margin-right: 30px;
-    font-size: 16px;
     transition: 0.3s;
     &:hover{
         color: $main-color;
@@ -54,7 +54,6 @@
 }
 .cart-button__title {
     flex: 3;
-    font-size: 15px;
 }
 .cart-button__count {
     flex: 1;

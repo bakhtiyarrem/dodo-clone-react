@@ -1,10 +1,12 @@
 import {combineReducers, createStore, compose, applyMiddleware} from "redux";
 import productsReduce from "./reducers/productsReduce";
 import thunk from "redux-thunk"
+import cartReduce from "./reducers/cartReduce";
 
 let reducers = combineReducers(
     {
-        productsReduce
+        productsReduce,
+        cartReduce
     }
 )
 

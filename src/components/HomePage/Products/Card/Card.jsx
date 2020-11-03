@@ -1,27 +1,18 @@
 import React, {useState} from 'react';
 import classNames from 'classnames';
 
-const Card = ({id, name, ingredient, imgUrl, price, sizes}) => {
-    const [productCount, setProductCount] = useState(0)
+const Card = ({id, name, ingredient, imgUrl, price, sizes, addToCart}) => {
     const [activeSize, setActiveSize] = useState(sizes[0])
-
     const toggleActiveSize = (activeSizeIndex) => {
         setActiveSize(activeSizeIndex)
     }
-    const incrementProductCount = () => {
-        setProductCount(prevState => prevState + 1)
-    }
-    const decrementProductCount = () => {
-        setProductCount(prevState => prevState - 1)
-    }
-
     const aviableSizes = [25, 30]
-
+    const onAddToCart = () => addToCart({id, name, imgUrl, price: price[activeSize] || price[0], size: aviableSizes[activeSize]})
 
     return (
         <div className="card">
-            <div className="card__img"><img
-                src={imgUrl}
+            <div className="card__img">
+                <img src={imgUrl}
                 alt="product image"/>
             </div>
             <div className="card__title">{name}</div>
@@ -46,15 +37,16 @@ const Card = ({id, name, ingredient, imgUrl, price, sizes}) => {
 
             <div className="card__bottom-wrapper">
                 <div className="card__price">{sizes.length ? price[activeSize] : price[0]} тг.</div>
-                {
-                    productCount
-                        ? <div className="card__qty-wrapper">
-                            <div className="card__change-btn" onClick={decrementProductCount}>-</div>
-                            <div className="card__qty">{productCount}</div>
-                            <div className="card__change-btn" onClick={incrementProductCount}>+</div>
-                        </div>
-                        : <button onClick={incrementProductCount} className="card__buy">Выбрать</button>
-                }
+                {/*{*/}
+                {/*    productCount*/}
+                {/*        ? <div className="card__qty-wrapper">*/}
+                {/*            <div className="card__change-btn">-</div>*/}
+                {/*            <div className="card__qty"></div>*/}
+                {/*            <div className="card__change-btn">+</div>*/}
+                {/*        </div>*/}
+                {/*        : */}
+                        <button className="card__buy" onClick={ onAddToCart }>Выбрать</button>
+                {/*}*/}
             </div>
         </div>
     );

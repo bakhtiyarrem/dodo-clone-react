@@ -1,6 +1,6 @@
 import React from 'react';
 
-const OrderCard = () => {
+const OrderCardItem = () => {
     return (
         <div className="order-card__item">
             <div className="order-card__img-wrapper">
@@ -23,9 +23,9 @@ const OrderCard = () => {
 
             <div className="order-card__price">1 990тг</div>
 
-            <div className="order-card__remove"><img src="img/icons/delete.svg" alt="delete icon" /></div>
+            <div className="order-card__remove"><img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828945.svg" alt="delete icon" /></div>
         </div>
     );
 };
 
-export default OrderCard;
+export default OrderCardItem;

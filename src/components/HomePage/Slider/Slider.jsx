@@ -23,8 +23,8 @@ const Slider = () => {
                             alt="Третий слайд"/>
                     </div>
 
-                    <a className="prev" onclick="minusSlide()">&#10094;</a>
-                    <a className="next" onclick="plusSlide()">&#10095;</a>
+                    <a className="prev" >&#10094;</a>
+                    <a className="next" >&#10095;</a>
                 </div>
 
                 <div className="slider-dots">
