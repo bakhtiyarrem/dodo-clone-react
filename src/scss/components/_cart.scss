@@ -40,7 +40,8 @@
 .order-card__qty-wrapper {
     display: flex;
     justify-content: space-around;
-    font-size: 24px;
+    font-size: 20px;
+    font-weight: 600;
     height: 40px;
 }
 .order-card__change-btn, .order-card__qty{
@@ -96,6 +97,7 @@
     border-radius: 15px;
     font-size: 18px;
     transition: .4s;
+    cursor: pointer;
 }
 .cart__back-btn {
     border: 2px solid $text-silver;

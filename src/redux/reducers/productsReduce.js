@@ -1,4 +1,4 @@
-import {ProductsApi} from "../../api/api";
+//import {ProductsApi} from "../../api/api";
 
 const SET_PRODUCTS = "SET_PRODUCTS"
 
@@ -43,12 +43,12 @@ const productsReduce = (state = initialState, action) => {
 //actions
 export const setProducts = (products) => ({type: SET_PRODUCTS, products})
 
-//thunks
-export const fetcProducts = () => async (dispatch) => {
-
-    const data = await ProductsApi.getProducts()
-    dispatch(setProducts(data))
-}
+// //thunks
+// export const fetcProducts = () => async (dispatch) => {
+//
+//     const data = await ProductsApi.getProducts()
+//     dispatch(setProducts(data))
+// }
 
 
 

@@ -30,7 +30,8 @@ const cartReduce = (state = initialState, action) => {
                     : [...state.items[action.payload.id], action.payload]
             }
 
-            const allProducts = [].concat.apply([], Object.values(newItems))
+            //const allProducts = [].concat.apply([], Object.values(newItems))
+            const allProducts = Object.values(newItems).flat()
             const totalPrice = allProducts.reduce((sum, obj) => obj.price + sum, 0)
 
             return {

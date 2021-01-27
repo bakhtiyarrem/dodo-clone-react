@@ -1,17 +1,17 @@
 import React from 'react';
 
-const OrderCardItem = () => {
+const OrderCardItem = ({id, imgUrl, name, price, size}) => {
     return (
         <div className="order-card__item">
             <div className="order-card__img-wrapper">
                 <img
-                    src="https://cdn.dodostatic.net/static/Img/Products/2e8c610d59ce49fbae8f8909b2940343_292x292.jpeg"
+                    src={imgUrl}
                     alt="product image" className="order-card__img" />
             </div>
 
             <div className="order-card__text">
-                <div className="order-card__title">Аррива</div>
-                <div className="order-card__info">Размер: 30 см.</div>
+                <div className="order-card__title">{name}</div>
+                <div className="order-card__info">Размер: {size} см.</div>
             </div>
 
             <div className="order-card__qty-wrapper">
@@ -21,9 +21,11 @@ const OrderCardItem = () => {
             </div>
 
 
-            <div className="order-card__price">1 990тг</div>
+            <div className="order-card__price">{price}</div>
 
-            <div className="order-card__remove"><img src="https://www.flaticon.com/svg/static/icons/svg/1828/1828945.svg" alt="delete icon" /></div>
+            <div className="order-card__remove">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/2716/2716333.svg" alt="delete icon" />
+            </div>
         </div>
     );
 };
